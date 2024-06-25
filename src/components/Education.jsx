@@ -15,7 +15,32 @@ const getMonthYear = (date) => {
 
 
 const Education = () => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([
+        {
+            "id": 3,
+            "degree": "PhD in ECE",
+            "start_date": "2021-08-28",
+            "end_date": null,
+            "institute": "NUS, Singapore",
+            "institute_url": "https://nus.edu.sg"
+        },
+        {
+            "id": 2,
+            "degree": "M.Sc. in EEE",
+            "start_date": "2017-02-26",
+            "end_date": "2021-11-21",
+            "institute": "CUET, Bangladesh",
+            "institute_url": "https://www.cuet.ac.bd"
+        },
+        {
+            "id": 1,
+            "degree": "B.Sc. in EEE",
+            "start_date": "2011-02-26",
+            "end_date": "2016-03-05",
+            "institute": "BUET, Bangladesh",
+            "institute_url": "https://www.buet.ac.bd"
+        }
+    ]); 
     const [isLoading, setIsLoading] = useState(false);
 
     const getData = async (ep) => {

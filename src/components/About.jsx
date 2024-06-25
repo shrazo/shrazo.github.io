@@ -6,12 +6,19 @@ import Stack from 'react-bootstrap/Stack';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Spinner from 'react-bootstrap/Spinner';
-import Highlight from 'react-highlight'
 import api from './api'
-import { alignPropType } from 'react-bootstrap/esm/types';
 
 const About = () => {
-    const [about, setAbout] = useState(null);
+    const [about, setAbout] = useState({
+        "id": 1,
+        "title": "About Me",
+        "description":"I am an Assistant Professor of Electrical and Electronic Engineering at the Chittagong University of Engineering and Technology(CUET), Bangladesh. Currently, I'm on leave to pursue my Ph. D. in Electrical and Computer Engineering at the National University of Singapore, Singapore. I completed my Masters from CUET and undergrad from Bangladesh University of Engineering and Technology(BUET), Dhaka, Bangladesh. My research is in realization of novel topological phenomena in classical electrical circuits. Base idea actually comes from Solid State Physics and I use typical electrical circuits to realize those novel charateristics. I'm primarily focused in processing quantum information using quantum gates and quantum operations which will be based on topological quantum computation.",
+        "title": "About me",
+        "photo": "../assets/SHR.jpg",
+        "created_at": "2024-06-23T17:12:09.055943Z",
+        "updated_at": "2024-06-23T18:11:00.589124Z",
+        "address": "CNNL, Dept. of ECE, NUS, Singapore"
+    });
     const [links, setLinks] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 
