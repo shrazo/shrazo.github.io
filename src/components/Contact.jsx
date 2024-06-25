@@ -49,26 +49,22 @@ const Contact = () => {
         api.get('about')
             .then((res) => {
                 if (res.status === 200) {
-                    console.log(res.data[res.data.length - 1]);
+                    // console.log(res.data[res.data.length - 1]);
                     setAbout(res.data[res.data.length - 1])
-                    setIsReceived(true)
                 }
                 setIsLoading(false)
             }).catch(err => {
                 console.log(err)
-                setIsReceived(false)
             })
         api.get('link')
             .then((res) => {
                 if (res.status === 200) {
                     // console.log(res.data);
                     setLinks(res.data)
-                    setIsReceived(true)
                 }
                 setIsLoading(false)
             }).catch(err => {
                 console.log(err)
-                setIsReceived(false)
             })
         setIsLoading(false)
     }

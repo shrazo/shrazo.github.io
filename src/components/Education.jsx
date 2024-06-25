@@ -49,7 +49,7 @@ const Education = () => {
             .then((res) => {
                 if (res.status === 200) {
                     setData(res.data)
-                    console.log(res.data)
+                    // console.log(res.data)
                 }
                 setIsLoading(false)
             }).catch(err => {
