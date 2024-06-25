@@ -114,7 +114,7 @@ const About = () => {
                     <Stack gap={3}>
                         <Row>
                             <Col sm={12} className='d-flex justify-content-center my-3'>
-                                <Image src="./src/assets/SHR.jpg" fluid rounded style={{ maxHeight: "250px" }} />
+                                <Image src={about.photo} fluid rounded style={{ maxHeight: "250px" }} />
                             </Col>
                             {links && <Col sm={12} className='d-flex justify-content-center mb-2'>
                                 <div className="links" style={{ display: 'flex', alignItems: 'baseline' }}>
