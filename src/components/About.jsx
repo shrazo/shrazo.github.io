@@ -13,7 +13,7 @@ const About = () => {
         "id": 1,
         "title": "About Me",
         "description":"I am an Assistant Professor of Electrical and Electronic Engineering at the Chittagong University of Engineering and Technology(CUET), Bangladesh. Currently, I'm on leave to pursue my Ph. D. in Electrical and Computer Engineering at the National University of Singapore, Singapore. I completed my Masters from CUET and undergrad from Bangladesh University of Engineering and Technology(BUET), Dhaka, Bangladesh. My research is in realization of novel topological phenomena in classical electrical circuits. Base idea actually comes from Solid State Physics and I use typical electrical circuits to realize those novel charateristics. I'm primarily focused in processing quantum information using quantum gates and quantum operations which will be based on topological quantum computation.",
-        "photo": "./src/assets/SHR.jpg",
+        "photo": "",
         "created_at": "2024-06-23T17:12:09.055943Z",
         "updated_at": "2024-06-23T18:11:00.589124Z",
         "address": "CNNL, Dept. of ECE, NUS, Singapore"

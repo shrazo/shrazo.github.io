@@ -46,16 +46,6 @@ const Contact = () => {
     const getData = async () => {
         setIsLoading(true)
         // console.log('Data requested')
-        api.get('about')
-            .then((res) => {
-                if (res.status === 200) {
-                    // console.log(res.data[res.data.length - 1]);
-                    setAbout(res.data[res.data.length - 1])
-                }
-                setIsLoading(false)
-            }).catch(err => {
-                console.log(err)
-            })
         api.get('link')
             .then((res) => {
                 if (res.status === 200) {
