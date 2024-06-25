@@ -20,6 +20,7 @@ const About = () => {
     });
     const [links, setLinks] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    const [isReceived, setIsReceived] = useState(false)
 
     const getLinkContent = (link) => {
         switch (link.media) {
@@ -62,22 +63,26 @@ const About = () => {
         api.get('about')
             .then((res) => {
                 if (res.status === 200) {
-                    // console.log(res.data[res.data.length - 1]);
+                    console.log(res.data[res.data.length - 1]);
                     setAbout(res.data[res.data.length - 1])
+                    setIsReceived(true)
                 }
                 setIsLoading(false)
             }).catch(err => {
                 console.log(err)
+                setIsReceived(false)
             })
         api.get('link')
             .then((res) => {
                 if (res.status === 200) {
                     // console.log(res.data);
                     setLinks(res.data)
+                    setIsReceived(true)
                 }
                 setIsLoading(false)
             }).catch(err => {
                 console.log(err)
+                setIsReceived(false)
             })
         setIsLoading(false)
     }
