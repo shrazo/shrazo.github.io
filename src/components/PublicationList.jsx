@@ -37,7 +37,7 @@ const PublicationList = ({ data }) => {
                     >
                         <div className="ms-2 me-auto">
                             <div className="fw-bold paper-title">
-                                {publication.title} {publication.doi && <a href={publication.doi} className='text-decoration-none'> <Badge bg="secondary" pill>
+                                {publication.title} {publication.doi && <a href={`https://www.doi.org/${publication.doi}`} className='text-decoration-none'> <Badge bg="secondary" pill>
                                     DOI </Badge> </a> } {' '} {publication.pdf_link && <a href={publication.pdf_link} className='text-decoration-none'> <Badge bg="success">PDF</Badge></a>} {' '} 
                                     {publication.cite && <Badge bg="dark" onClick={handleShow} >Cite</Badge>}
                             </div>
